@@ -1,0 +1,62 @@
+/* INFO LOCAIS */
+
+.info-locais1,
+.info-locais2,
+.info-locais3,
+.info-locais4,
+.info-locais5,
+.info-locais6 {
+  padding: 64px 0;
+  background: $branco;
+  border-top: 3px solid $vermelho;
+  border-bottom: 3px solid $vermelho;
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.info-text {
+  h2 {
+    @include tipo-2(48);
+    margin-bottom: 32px;
+    color: $azul;
+    margin-left: 64px;
+    &::after {
+      content: '';
+      display: block;
+      width: 132px;
+      height: 3px;
+      background: $vermelho;
+    }
+  }
+  p {
+    @include tipo-1(24);
+    color: $azul;
+    max-width: 599px;
+    margin-bottom: 16px;
+    line-height: 31px;
+  }
+  a {
+    @include tipo-1(26);
+    font-weight: bold;
+    color: $branco;
+    position: absolute;
+    background: $vermelho;
+    text-align: center;
+    padding: 32px 60px;
+    margin-top: 16px;
+    &:hover {
+      transform: scale(0.8);
+      transition: 1s;
+    }
+  }
+}
+
+.mapa {
+  margin-top: -32px;
+}

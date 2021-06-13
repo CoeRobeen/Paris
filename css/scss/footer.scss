@@ -1,0 +1,17 @@
+/* footer */
+.footer {
+  padding: 16px 0;
+  background: $branco;
+  display: flex;
+  flex-wrap: wrap;
+  p {
+    text-align: center;
+    color: $azul;
+    @include tipo-1(26);
+  }
+}
+
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}

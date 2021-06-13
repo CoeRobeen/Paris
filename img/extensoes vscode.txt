@@ -1,0 +1,9 @@
+Auto Rename Tag,
+Bracket Pair Colorizer 2,
+Color Highlight,
+Dracula Official,
+Live Server,
+Origamid Next,
+Visual Studio IntelliCode,
+WooCommerce - Snippets & Autocomplete,
+WordPress Snippets

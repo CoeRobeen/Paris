@@ -1,0 +1,37 @@
+// Cores
+$vermelho: #e52c32;
+$branco: #fefefe;
+$azul: #041c96;
+
+//Fontes
+$font-1: 'KoHo', sans-serif;
+$font-2: 'Alice', serif;
+
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto + em;
+}
+
+@mixin tipo-1($size) {
+  font-family: $font-1;
+  @if $size == 24 {
+    font-size: em(24);
+    line-height: em(31);
+  } @else if $size == 26 {
+    font-size: em(26);
+    line-height: em(34);
+  }
+}
+
+@mixin tipo-2($size) {
+  font-family: $font-2;
+  @if $size == 72 {
+    font-size: em(72);
+    line-height: em(auto);
+  } @else if $size == 48 {
+    font-size: em(48);
+    line-height: em(auto);
+  } @else if $size == 36 {
+    font-size: em(36);
+    line-height: em(auto);
+  }
+}

@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*INTRO*/
+.banner {
+  background: url("/img/banner.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 444px;
+}
+
+/* Intro Escolhas*/
+.intro {
+  padding: 128px 0;
+  position: absolute;
+}
+
+.intro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.intro h1 {
+  font-family: "Alice", serif;
+  font-size: 4.5em;
+  line-height: auto/16em;
+  text-align: center;
+  width: 455px;
+  color: #041c96;
+  margin-bottom: 16px;
+}
+
+.intro h2 {
+  font-family: "Alice", serif;
+  font-size: 2.25em;
+  line-height: auto/16em;
+  text-align: center;
+  width: 455px;
+  color: #041c96;
+  margin-bottom: 16px;
+}
+
+.intro a {
+  display: flex;
+  justify-content: center;
+  font-family: "KoHo", sans-serif;
+  font-size: 1.625em;
+  line-height: 2.125em;
+  color: #e52c32;
+  width: 108px;
+  margin: 0 auto;
+}
+
+.intro a img {
+  margin-left: 8px;
+}
+
+/* Menu */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-img {
+  position: absolute;
+  margin: 32px 0;
+}
+
+.escolhas {
+  padding-top: 64px;
+  padding-bottom: 32px;
+  background: #fefefe;
+}
+
+.escolhas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.escolhas-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.escolhas-info h2 {
+  font-family: "Alice", serif;
+  font-size: 2.25em;
+  line-height: auto/16em;
+  width: 311px;
+  color: #041c96;
+}
+
+.escolhas-info h2::after {
+  content: '';
+  display: block;
+  width: 132px;
+  height: 3px;
+  background: #e52c32;
+}
+
+/* SLiDE ESCOLHAS */
+.slide-wrapper {
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+.slide li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 370px;
+  margin: 0 16px;
+  margin-bottom: 64px;
+  overflow: hidden;
+  opacity: 1;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.arrow-nav button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* INFO LOCAIS */
+.info-locais1,
+.info-locais2,
+.info-locais3,
+.info-locais4,
+.info-locais5,
+.info-locais6 {
+  padding: 64px 0;
+  background: #fefefe;
+  border-top: 3px solid #e52c32;
+  border-bottom: 3px solid #e52c32;
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.info-text h2 {
+  font-family: "Alice", serif;
+  font-size: 3em;
+  line-height: auto/16em;
+  margin-bottom: 32px;
+  color: #041c96;
+  margin-left: 64px;
+}
+
+.info-text h2::after {
+  content: '';
+  display: block;
+  width: 132px;
+  height: 3px;
+  background: #e52c32;
+}
+
+.info-text p {
+  font-family: "KoHo", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.9375em;
+  color: #041c96;
+  max-width: 599px;
+  margin-bottom: 16px;
+  line-height: 31px;
+}
+
+.info-text a {
+  font-family: "KoHo", sans-serif;
+  font-size: 1.625em;
+  line-height: 2.125em;
+  font-weight: bold;
+  color: #fefefe;
+  position: absolute;
+  background: #e52c32;
+  text-align: center;
+  padding: 32px 60px;
+  margin-top: 16px;
+}
+
+.info-text a:hover {
+  transform: scale(0.8);
+  transition: 1s;
+}
+
+.mapa {
+  margin-top: -32px;
+}
+
+/* footer */
+.footer {
+  padding: 16px 0;
+  background: #fefefe;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  text-align: center;
+  color: #041c96;
+  font-family: "KoHo", sans-serif;
+  font-size: 1.625em;
+  line-height: 2.125em;
+}
+
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,51 @@
+/*INTRO*/
+
+.banner {
+  background: url('/img/banner.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 444px;
+}
+
+/* Intro Escolhas*/
+.intro {
+  padding: 128px 0;
+  position: absolute;
+}
+
+.intro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  h1 {
+    @include tipo-2(72);
+    text-align: center;
+    width: 455px;
+    color: $azul;
+    margin-bottom: 16px;
+  }
+  h2 {
+    @include tipo-2(36);
+    text-align: center;
+    width: 455px;
+    color: $azul;
+    margin-bottom: 16px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    @include tipo-1(26);
+
+    color: $vermelho;
+    width: 108px;
+    margin: 0 auto;
+  }
+  a img {
+    margin-left: 8px;
+  }
+}
